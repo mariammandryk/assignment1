@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-RUN apt-get update && apt-get install curl unzip bc -y
+RUN apt-get update && apt-get install curl unzip bc jq -y
 
 WORKDIR /s3_migration
 
@@ -13,4 +13,4 @@ COPY ./scripts /s3_migration
 
 RUN chmod +x ./main.sh
 
-ENTRYPOINT ["sh", "./main.sh"]
+ENTRYPOINT ["bash", "./main.sh"]
