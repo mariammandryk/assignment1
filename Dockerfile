@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-RUN apt-get update && apt-get install curl unzip -y
+RUN apt-get update && apt-get install curl unzip bc -y
 
 WORKDIR /s3_migration
 
