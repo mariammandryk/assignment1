@@ -21,5 +21,3 @@ aws s3api list-objects --bucket $SOURCE_BUCKET --output json --query "Contents[?
                 echo "copied from ${source_path} to ${destination_path}"
         }
     done
-
-# wait
